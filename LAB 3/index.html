@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Report Card</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+  <div class="container my-5">
+    <div class="card shadow-lg">
+      <div class="card-body">
+        <h2 class="text-center mb-4">Student Report Card</h2>
+        <form onsubmit="event.preventDefault(); displayCard();">
+          <div class="mb-3">
+            <label class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Roll Number</label>
+            <input type="number" class="form-control" id="roll" required>
+          </div>
+          <h5 class="mt-4">Marks (5 Subjects)</h5>
+          <div class="mb-3">
+            <label class="form-label">Full Stack Development</label>
+            <input type="number" class="form-control" id="fsd">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Artificial Intelligence</label>
+            <input type="number" class="form-control" id="ai">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Linear Algebra</label>
+            <input type="number" class="form-control" id="la">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Intro to Management</label>
+            <input type="number" class="form-control" id="im">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Operating Systems</label>
+            <input type="number" class="form-control" id="os">
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Generate Report</button>
+        </form>
+
+        <div id="report" class="mt-4"></div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const subjects = {
+      fsd: "Full Stack Development",
+      ai: "Artificial Intelligence",
+      la: "Linear Algebra",
+      im: "Intro to Management",
+      os: "Operating Systems"
+    };
+
+    const assignGrade = (marks) => {
+      if (marks >= 90) return "A";
+      else if (marks >= 75) return "B";
+      else if (marks >= 60) return "C";
+      else return "Fail";
+    };
+
+    const calculate_avg = (marksArr) => {
+      let sum = 0;
+      marksArr.forEach(m => sum += m);
+      return sum / marksArr.length;
+    };
+
+    function displayCard() {
+      const name = document.getElementById("name").value;
+      const roll = document.getElementById("roll").value;
+
+      let marksArr = [];
+      let details = [];
+
+      for (let id in subjects) {
+        let marks = parseInt(document.getElementById(id).value) || 0;
+        marksArr.push(marks);
+        details.push({
+          subject: subjects[id],
+          marks: marks,
+          grade: assignGrade(marks)
+        });
+      }
+
+      let avg = calculate_avg(marksArr);
+      let overallGrade = assignGrade(avg);
+
+      const student = {
+        name: name,
+        roll: roll,
+        marks: marksArr,
+        average: avg,
+        grade: overallGrade
+      };
+
+      console.log("Student Object:", student);
+
+      let table = `
+        <div class="card mt-3">
+          <div class="card-body">
+            <h3 class="mb-3">Report Card</h3>
+            <p><b>Name:</b> ${student.name} <br> <b>Roll No:</b> ${student.roll}</p>
+            <table class="table table-bordered">
+              <thead class="table-light">
+                <tr><th>Subject</th><th>Marks</th><th>Grade</th></tr>
+              </thead>
+              <tbody>`;
+
+      details.forEach(d => {
+        table += `<tr>
+                    <td>${d.subject}</td>
+                    <td>${d.marks}</td>
+                    <td>${d.grade}</td>
+                  </tr>`;
+      });
+
+      table += `</tbody></table>
+                <p><b>Average:</b> ${student.average.toFixed(2)} <br>
+                <b>Overall Grade:</b> ${student.grade}</p>
+          </div>
+        </div>`;
+
+      document.getElementById("report").innerHTML = table;
+    }
+  </script>
+</body>
+</html>
