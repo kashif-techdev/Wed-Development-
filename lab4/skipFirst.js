@@ -1,3 +1,4 @@
+//here we are skipping the first value using rest operators
 function calculate(operation, ...nums)
 {
   if (operation === "add") 
