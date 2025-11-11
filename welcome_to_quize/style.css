@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz App</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #F5F5DC;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 30px;
+      color: #4b3d2a;
+    }
+
+    .container {
+      width: 40%;
+      background-color: white;
+      border: 2px solid #C19A6B;
+      border-radius: 15px;
+      margin: 50px auto;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .innerbox {
+      margin: 15px 0;
+    }
+
+    button {
+      background-color: #C19A6B;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 18px;
+    }
+
+    button:hover {
+      background-color: #a67b5b;
+    }
+
+    .question-box {
+      display: none;
+    }
+
+    .timer {
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: darkred;
+    }
+
+    .feedback {
+      font-weight: bold;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to the Quiz</h1>
+  <hr>
+
+  <div class="container" id="form-container">
+    <form id="quizForm">
+      <div class="innerbox">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" placeholder="Enter your full name" required>
+      </div>
+
+      <div class="innerbox">
+        <label for="subject">Subject:</label><br>
+        <input type="text" id="subject" placeholder="Enter subject name" required>
+      </div>
+
+      <button type="submit">Start Quiz</button>
+      <p id="formMsg" style="color:red; font-weight:bold;"></p>
+    </form>
+  </div>
+
+  <div class="container question-box" id="quiz-container">
+    <div id="timers">
+      <p>Question Timer: <span id="questionTimer">10</span>s</p>
+      <p>Total Timer: <span id="totalTimer">50</span>s</p>
+    </div>
+
+    <div id="question-text"></div>
+    <div id="options"></div>
+    <div class="feedback" id="feedback"></div>
+  </div>
+
+  <div class="container question-box" id="result-container">
+    <h2>Quiz Completed!</h2>
+    <p id="result"></p>
+  </div>
+
+  <script>
+    const quizForm = document.getElementById("quizForm");
+    const formMsg = document.getElementById("formMsg");
+    const formContainer = document.getElementById("form-container");
+    const quizContainer = document.getElementById("quiz-container");
+    const resultContainer = document.getElementById("result-container");
+
+    const questionText = document.getElementById("question-text");
+    const optionsDiv = document.getElementById("options");
+    const feedbackDiv = document.getElementById("feedback");
+
+    const questionTimerEl = document.getElementById("questionTimer");
+    const totalTimerEl = document.getElementById("totalTimer");
+    const resultEl = document.getElementById("result");
+
+    const questions = [
+      { q: "What does HTML stand for?", options: ["HyperText Markup Language", "Home Tool Markup", "Hyperlinks Markup Language", "Hyper Tag Making Language"], answer: 0 },
+      { q: "Which CSS property changes text color?", options: ["font-color", "text-color", "color", "text-style"], answer: 2 },
+      { q: "What keyword declares a variable in JavaScript?", options: ["var", "variable", "v", "letvar"], answer: 0 },
+      { q: "What is the extension for JavaScript files?", options: [".js", ".java", ".py", ".txt"], answer: 0 },
+      { q: "Which tag is used to link CSS in HTML?", options: ["<link>", "<style>", "<css>", "<src>"], answer: 0 }
+    ];
+
+    let score = 0;
+    let currentQuestion = 0;
+    let questionTimer = 10;
+    let totalTimer = 50;
+    let qInterval, totalInterval;
+
+    quizForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const name = document.getElementById("name").value.trim();
+      const subject = document.getElementById("subject").value.trim();
+
+      if (name === "" || subject === "") {
+        formMsg.textContent = "⚠️ Please fill all fields before starting.";
+        return;
+      }
+
+      formContainer.style.display = "none";
+      quizContainer.style.display = "block";
+      startQuiz();
+    });
+
+    function startQuiz() {
+      startTotalTimer();
+      showQuestion();
+    }
+
+    function startTotalTimer() {
+      totalInterval = setInterval(() => {
+        totalTimer--;
+        totalTimerEl.textContent = totalTimer;
+        if (totalTimer <= 0) {
+          clearInterval(totalInterval);
+          endQuiz();
+        }
+      }, 1000);
+    }
+
+    function showQuestion() {
+      if (currentQuestion >= questions.length) {
+        endQuiz();
+        return;
+      }
+
+      let q = questions[currentQuestion];
+      questionText.textContent = `${currentQuestion + 1}. ${q.q}`;
+      optionsDiv.innerHTML = "";
+      feedbackDiv.textContent = "";
+      questionTimer = 10;
+      questionTimerEl.textContent = questionTimer;
+
+      q.options.forEach((opt, i) => {
+        const btn = document.createElement("button");
+        btn.textContent = opt;
+        btn.style.display = "block";
+        btn.style.margin = "5px auto";
+        btn.onclick = () => checkAnswer(i);
+        optionsDiv.appendChild(btn);
+      });
+
+      qInterval = setInterval(() => {
+        questionTimer--;
+        questionTimerEl.textContent = questionTimer;
+        if (questionTimer <= 0) {
+          clearInterval(qInterval);
+          feedbackDiv.textContent = "⏰ Time out! Question skipped.";
+          nextQuestion();
+        }
+      }, 1000);
+    }
+
+    function checkAnswer(selected) {
+      clearInterval(qInterval);
+      let correct = questions[currentQuestion].answer;
+      if (selected === correct) {
+        score += 5;
+        feedbackDiv.textContent = "✅ Correct!";
+      } else {
+        feedbackDiv.textContent = "❌ Incorrect!";
+      }
+      setTimeout(nextQuestion, 1000);
+    }
+
+    function nextQuestion() {
+      currentQuestion++;
+      showQuestion();
+    }
+
+    function endQuiz() {
+      clearInterval(totalInterval);
+      quizContainer.style.display = "none";
+      resultContainer.style.display = "block";
+      resultEl.textContent = `You scored ${score} out of 25.`;
+    }
+  </script>
+</body>
+</html>
