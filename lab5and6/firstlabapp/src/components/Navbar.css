@@ -1,0 +1,34 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1e293b;
+  color: white;
+  padding: 10px 20px;
+}
+
+.navbar-title {
+  font-size: 20px;
+}
+
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+}
+
+.navbar-menu li {
+  cursor: pointer;
+}
+
+.navbar-user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
