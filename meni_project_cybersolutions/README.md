@@ -25,6 +25,26 @@ front end:
 .
 <br>
 <img width="1920" height="506" alt="image" src="https://github.com/user-attachments/assets/8afd3c0c-69b0-4a96-93f3-5933d0ee4bec" />
+<br>
+.
+<br>
+.
+<br>
+==> Now let's come towards it's responsiveness
+<img width="471" height="832" alt="image" src="https://github.com/user-attachments/assets/6d0bdb8d-8bc9-471d-8909-7fd11e4f588c" />
+<br>
+.
+<br>
+.
+<br>
+<img width="542" height="834" alt="image" src="https://github.com/user-attachments/assets/600d3b77-67b6-43cd-9831-2307fb6df1d6" />
+<br>
+.
+<br>
+.
+<br>
 
+===> everthing is responsive , and we have more sections as well in the same design.
 
+==> The end 
 
