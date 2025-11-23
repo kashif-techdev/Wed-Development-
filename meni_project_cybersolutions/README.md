@@ -31,6 +31,11 @@ front end:
 .
 <br>
 ==> Now let's come towards it's responsiveness
+<br>
+.
+<br>
+.
+<br>
 <img width="471" height="832" alt="image" src="https://github.com/user-attachments/assets/6d0bdb8d-8bc9-471d-8909-7fd11e4f588c" />
 <br>
 .
