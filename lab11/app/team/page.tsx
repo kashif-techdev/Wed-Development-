@@ -2,8 +2,8 @@ import Navbar from "@/components/navbar"
 import { Mail, Linkedin } from "lucide-react"
 
 export const metadata = {
-  title: "Team - PCC Event 2025",
-  description: "Meet the organizing team behind PCC Tech Event 2025",
+  title: "Team - ARAINS 2025",
+  description: "Meet the organizing team behind ARAINS 2025",
 }
 
 const teamMembers = [
@@ -59,9 +59,9 @@ export default function Team() {
         <div className="max-w-6xl mx-auto">
           {/* Header */}
           <div className="text-center mb-12">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-foreground to-foreground/70 bg-clip-text text-transparent">Our Team</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-foreground to-foreground/70 bg-clip-text text-transparent">ARAINS Team</h1>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Meet the dedicated individuals working behind the scenes to make PCC Tech Event 2025 a success
+              Meet the dedicated individuals working behind the scenes to make ARAINS 2025 a success
             </p>
           </div>
 

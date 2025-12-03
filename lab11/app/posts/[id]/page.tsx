@@ -3,8 +3,8 @@ import Link from "next/link"
 import { ArrowLeft, Calendar, User, Tag, Link2 } from "lucide-react"
 
 export const metadata = {
-  title: "Event Details - PCC Event 2025",
-  description: "View individual event details",
+  title: "Event Details - ARAINS 2025",
+  description: "View individual ARAINS event details",
 }
 
 // Mock data for events/posts
@@ -18,7 +18,7 @@ const eventsData: Record<
     author: "Event Committee",
     category: "Ceremony",
     content:
-      "Join us for the grand opening of PCC Tech Event 2025! The ceremony will feature welcome addresses from college leadership, introduction of guest speakers, and an overview of the exciting three days ahead.",
+      "Join us for the grand opening of ARAINS 2025! The ceremony will feature welcome addresses from college leadership, introduction of guest speakers, and an overview of the exciting three days ahead.",
     details: [
       "Venue: Main Auditorium",
       "Time: 9:00 AM - 10:00 AM",
@@ -64,7 +64,7 @@ const eventsData: Record<
     author: "Event Committee",
     category: "Ceremony",
     content:
-      "Celebrate the conclusion of PCC Tech Event 2025 with our closing ceremony. Awards will be presented to hackathon winners, best workshop participants, and outstanding volunteers.",
+      "Celebrate the conclusion of ARAINS 2025 with our closing ceremony. Awards will be presented to hackathon winners, best workshop participants, and outstanding volunteers.",
     details: ["Venue: Main Auditorium", "Time: 4:00 PM - 5:30 PM", "Certificate distribution", "Refreshments provided"],
   },
 }

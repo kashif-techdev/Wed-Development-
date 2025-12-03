@@ -32,7 +32,7 @@ export default function Navbar() {
             <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-primary to-primary/80 flex items-center justify-center shadow-lg group-hover:shadow-xl transition-shadow">
               <Calendar className="w-5 h-5 text-primary-foreground" />
             </div>
-            <span className="text-foreground bg-gradient-to-r from-foreground to-foreground/80 bg-clip-text">PCC Event</span>
+            <span className="text-foreground bg-gradient-to-r from-foreground to-foreground/80 bg-clip-text">ARAINS</span>
           </Link>
 
           {/* Desktop Navigation */}

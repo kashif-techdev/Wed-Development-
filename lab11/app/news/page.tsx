@@ -3,8 +3,8 @@ import Link from "next/link"
 import { Calendar, ArrowRight, Rss } from "lucide-react"
 
 export const metadata = {
-  title: "News & Announcements - PCC Event 2025",
-  description: "Latest news and announcements for PCC Tech Event 2025",
+  title: "News & Announcements - ARAINS 2025",
+  description: "Latest news and announcements for ARAINS 2025",
 }
 
 // SSG - This data is fetched at build time (simulating getStaticProps behavior)
@@ -12,7 +12,7 @@ async function getNews() {
   const news = [
     {
       id: 1,
-      title: "Registration Now Open for PCC Tech Event 2025",
+      title: "Registration Now Open for ARAINS 2025",
       date: "2025-01-15",
       category: "Announcement",
       excerpt: "Early bird registration is now open! Get 20% off when you register before February 1st.",
@@ -62,7 +62,7 @@ export default async function News() {
           <div className="text-center mb-12">
             <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-foreground to-foreground/70 bg-clip-text text-transparent">News & Announcements</h1>
             <p className="text-xl text-muted-foreground mb-4">
-              Stay updated with the latest news about PCC Tech Event 2025
+              Stay updated with the latest news about ARAINS 2025
             </p>
             <div className="inline-flex items-center gap-2 bg-primary/10 border-2 border-primary/20 px-4 py-2 rounded-lg text-sm text-primary shadow-md backdrop-blur-sm">
               <Rss className="w-4 h-4" />

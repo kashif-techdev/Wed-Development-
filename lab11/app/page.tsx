@@ -15,7 +15,7 @@ export default function HomePage() {
     {
       icon: Users,
       title: "Meet the Team",
-      description: "Get to know the dedicated organizers behind PCC Event",
+      description: "Get to know the dedicated organizers behind ARAINS",
       href: "/team",
     },
     {
@@ -58,7 +58,7 @@ export default function HomePage() {
             </div>
 
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 text-balance animate-slide-in">
-              Welcome to <span className="text-primary bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">PCC Event 2025</span>
+              Welcome to <span className="text-primary bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">ARAINS 2025</span>
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto text-pretty animate-fade-in">
               Join us for an incredible celebration of technology, innovation, and community
@@ -124,7 +124,7 @@ export default function HomePage() {
                 </CardTitle>
               </CardHeader>
               <div className="px-6 pb-6 space-y-4 text-muted-foreground">
-                <p className="text-base">This PCC Event Website demonstrates key Next.js concepts including:</p>
+                <p className="text-base">This ARAINS website demonstrates key Next.js concepts including:</p>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-3 group/item">
                     <span className="w-2 h-2 rounded-full bg-primary mt-2 shrink-0 group-hover/item:scale-150 transition-transform duration-300" />
@@ -163,7 +163,7 @@ export default function HomePage() {
       {/* Footer */}
       <footer className="py-8 border-t border-border bg-card/30 backdrop-blur-sm">
         <div className="container mx-auto px-4 text-center text-muted-foreground">
-          <p>&copy; 2025 PCC Event. Built with Next.js</p>
+          <p>&copy; 2025 ARAINS. Built with Next.js</p>
         </div>
       </footer>
     </div>

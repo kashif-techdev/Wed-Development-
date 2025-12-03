@@ -8,10 +8,10 @@ import "./globals.css"
 const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
-// <CHANGE> Updated metadata for PCC Event website
+// <CHANGE> Updated metadata for ARAINS Event website
 export const metadata: Metadata = {
-  title: "PCC Event 2025 - Tech Conference",
-  description: "Join us for PCC Tech Event 2025 - A celebration of technology, innovation, and community",
+  title: "ARAINS 2025 - Tech Conference",
+  description: "Join us for ARAINS 2025 - A celebration of technology, innovation, and community",
   generator: "v0.app",
   icons: {
     icon: [

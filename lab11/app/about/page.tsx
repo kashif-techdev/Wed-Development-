@@ -2,8 +2,8 @@ import Navbar from "@/components/navbar"
 import { Target, Lightbulb, Award, Heart } from "lucide-react"
 
 export const metadata = {
-  title: "About - PCC Event 2025",
-  description: "Learn about the PCC Annual Tech Event",
+  title: "About - ARAINS 2025",
+  description: "Learn about the ARAINS Annual Tech Event",
 }
 
 export default function About() {
@@ -14,14 +14,14 @@ export default function About() {
         <div className="max-w-4xl mx-auto">
           {/* Header */}
           <div className="text-center mb-12">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-foreground to-foreground/70 bg-clip-text text-transparent">About the Event</h1>
-            <p className="text-xl text-muted-foreground">Discover what makes PCC Tech Event 2025 special</p>
+            <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-foreground to-foreground/70 bg-clip-text text-transparent">About ARAINS</h1>
+            <p className="text-xl text-muted-foreground">Discover what makes ARAINS 2025 special</p>
           </div>
 
           <div className="bg-card/50 backdrop-blur-sm border-2 border-border rounded-xl p-8 mb-12 hover:border-primary/30 transition-all duration-300 hover:shadow-xl">
             <h2 className="text-2xl font-bold mb-4">Our Story</h2>
             <p className="text-muted-foreground mb-4 leading-relaxed">
-              The PCC Tech Event started in 2018 as a small gathering of technology enthusiasts. Over the years, it has
+              ARAINS started in 2018 as a small gathering of technology enthusiasts. Over the years, it has
               grown into one of the most anticipated annual events in our college, bringing together students, faculty,
               and industry professionals.
             </p>
@@ -32,7 +32,7 @@ export default function About() {
             </p>
             <p className="text-muted-foreground leading-relaxed">
               Whether you're a beginner looking to learn new skills or an experienced developer wanting to share your
-              knowledge, PCC Tech Event has something for everyone.
+              knowledge, ARAINS has something for everyone.
             </p>
           </div>
 

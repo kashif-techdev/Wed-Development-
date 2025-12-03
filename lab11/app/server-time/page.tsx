@@ -2,8 +2,8 @@ import Navbar from "@/components/navbar"
 import { Clock, RefreshCw, Server, Zap } from "lucide-react"
 
 export const metadata = {
-  title: "Live Server Time - PCC Event 2025",
-  description: "Real-time server clock using Server-Side Rendering",
+  title: "Live Server Time - ARAINS 2025",
+  description: "Real-time server clock for ARAINS using Server-Side Rendering",
 }
 
 // Force dynamic rendering (SSR) - equivalent to getServerSideProps
