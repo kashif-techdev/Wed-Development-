@@ -5,7 +5,7 @@ import { MdSwitchAccount } from "react-icons/md";
 import { useSelector } from "react-redux";
 
 const SpecialCase = () => {
-  const products = useSelector((state) => state.orebiReducer.products);
+  const products = useSelector((state) => state.ariansReducer.products);
   return (
     <div className="fixed top-52 right-2 z-20 hidden md:flex flex-col gap-2">
       <Link to="/signin">

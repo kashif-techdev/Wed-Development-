@@ -3,13 +3,13 @@ import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import Breadcrumbs from "../../components/pageProps/Breadcrumbs";
-import { resetCart } from "../../redux/orebiSlice";
+import { resetCart } from "../../redux/ariansSlice";
 import { emptyCart } from "../../assets/images/index";
 import ItemCard from "./ItemCard";
 
 const Cart = () => {
   const dispatch = useDispatch();
-  const products = useSelector((state) => state.orebiReducer.products);
+  const products = useSelector((state) => state.ariansReducer.products);
   const [totalAmt, setTotalAmt] = useState("");
   const [shippingCharge, setShippingCharge] = useState("");
   useEffect(() => {

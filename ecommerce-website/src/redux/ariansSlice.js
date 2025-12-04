@@ -5,8 +5,8 @@ const initialState = {
   products: [],
 };
 
-export const orebiSlice = createSlice({
-  name: "orebi",
+export const ariansSlice = createSlice({
+  name: "arians",
   initialState,
   reducers: {
     addToCart: (state, action) => {
@@ -27,7 +27,7 @@ export const orebiSlice = createSlice({
         item.quantity++;
       }
     },
-    drecreaseQuantity: (state, action) => {
+    decreaseQuantity: (state, action) => {
       const item = state.products.find(
         (item) => item._id === action.payload._id
       );
@@ -51,8 +51,9 @@ export const orebiSlice = createSlice({
 export const {
   addToCart,
   increaseQuantity,
-  drecreaseQuantity,
+  decreaseQuantity,
   deleteItem,
   resetCart,
-} = orebiSlice.actions;
-export default orebiSlice.reducer;
+} = ariansSlice.actions;
+export default ariansSlice.reducer;
+

@@ -1,12 +1,19 @@
-[00:00:01.869] Server  LOG      ✓ Ready in 1294ms
-[00:00:13.031] Server  LOG      ○ Compiling / ...
-[00:00:16.180] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:16.698] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:00:16.698] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[00:00:16.698] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1764700534216}
-[00:13:50.239] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
-[00:13:50.239] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/about color: rgb(120, 120, 120) color: inherit {"dp":"/about","o":"http://localhost:3000/about","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1764701347753}
-[00:13:59.396] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/team color: rgb(120, 120, 120) color: inherit {"dp":"/team","o":"http://localhost:3000/team","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1764701356898}
-[00:15:02.596] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/about color: rgb(120, 120, 120) color: inherit {"dp":"/about","o":"http://localhost:3000/about","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1764701420094}
-[00:16:18.249] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/news color: rgb(120, 120, 120) color: inherit {"dp":"/news","o":"http://localhost:3000/news","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1764701495765}
-[00:17:02.745] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/server-time color: rgb(120, 120, 120) color: inherit {"dp":"/server-time","o":"http://localhost:3000/server-time","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1764701540243}
+[00:00:06.857] Server  LOG      ✓ Ready in 4.3s
+[00:00:28.631] Server  LOG      ○ Compiling / ...
+[00:00:38.208] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:38.865] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:38.865] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:00:38.865] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1764785195950}
+[00:23:35.210] Server  ERROR   D:\University\5\Wed-Development-\lab11\node_modules\next\dist\server\dev\log-requests.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:23:35.241] Server  ERROR   D:\University\5\Wed-Development-\lab11\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:23:35.256] Server  ERROR   Error: EPIPE: broken pipe, write
+[00:23:35.275] Server  ERROR   D:\University\5\Wed-Development-\lab11\node_modules\next\dist\server\dev\log-requests.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:23:35.276] Server  ERROR   D:\University\5\Wed-Development-\lab11\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:23:35.288] Server  ERROR    ⨯ "uncaughtException:" Error: EPIPE: broken pipe, write
+[00:23:35.302] Server  ERROR   D:\University\5\Wed-Development-\lab11\node_modules\next\dist\server\dev\log-requests.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:23:35.306] Server  ERROR   D:\University\5\Wed-Development-\lab11\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:23:35.309] Server  ERROR    ⨯ "uncaughtException: " Error: EPIPE: broken pipe, write
+[00:23:35.511] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:23:36.220] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:23:36.220] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:23:36.220] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1764786573301}

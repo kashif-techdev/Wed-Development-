@@ -110,8 +110,8 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$theme$2d$provi
 ;
 ;
 const metadata = {
-    title: "PCC Event 2025 - Tech Conference",
-    description: "Join us for PCC Tech Event 2025 - A celebration of technology, innovation, and community",
+    title: "ARAINS 2025 - Tech Conference",
+    description: "Join us for ARAINS 2025 - A celebration of technology, innovation, and community",
     generator: "v0.app",
     icons: {
         icon: [

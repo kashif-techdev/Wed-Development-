@@ -268,7 +268,7 @@ function HomePage() {
         {
             icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$users$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Users$3e$__["Users"],
             title: "Meet the Team",
-            description: "Get to know the dedicated organizers behind PCC Event",
+            description: "Get to know the dedicated organizers behind ARAINS",
             href: "/team"
         },
         {
@@ -366,7 +366,7 @@ function HomePage() {
                                             "Welcome to ",
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                 className: "text-primary bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent",
-                                                children: "PCC Event 2025"
+                                                children: "ARAINS 2025"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/page.tsx",
                                                 lineNumber: 61,
@@ -599,7 +599,7 @@ function HomePage() {
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                 className: "text-base",
-                                                children: "This PCC Event Website demonstrates key Next.js concepts including:"
+                                                children: "This ARAINS website demonstrates key Next.js concepts including:"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/page.tsx",
                                                 lineNumber: 127,
@@ -779,7 +779,7 @@ function HomePage() {
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "container mx-auto px-4 text-center text-muted-foreground",
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                        children: "© 2025 PCC Event. Built with Next.js"
+                        children: "© 2025 ARAINS. Built with Next.js"
                     }, void 0, false, {
                         fileName: "[project]/app/page.tsx",
                         lineNumber: 166,
