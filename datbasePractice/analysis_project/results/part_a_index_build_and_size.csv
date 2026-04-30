@@ -1,0 +1,6 @@
+strategy,index_build_time_ms,index_size_bytes
+baseline_no_index,0.0,0
+single_column,591.179,4431872
+composite,823.452,18923520
+partial,212.774,737280
+covering,989.234,27033600

@@ -1,0 +1,6 @@
+wal_config,insert_time_sec,rows_per_sec,wal_bytes_generated,checkpoints_timed_delta,checkpoints_req_delta,recovery_time_sec,notes
+default_baseline,3.924,25484.0,38938400,0,0,-1,Set manually in postgresql.conf before run
+fsync_off,2.262,44208.13,27389712,0,0,-1,Set manually in postgresql.conf before run
+wal_buffers_64mb,3.3,30304.71,26880664,0,0,-1,Set manually in postgresql.conf before run
+slow_checkpoints,2.055,48656.99,26880048,0,0,-1,Set manually in postgresql.conf before run
+synchronous_commit_off,3.246,30805.03,26973296,0,0,-1,Set manually in postgresql.conf before run
